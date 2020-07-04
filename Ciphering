@@ -1,0 +1,11 @@
+encrypted = ""
+#shift
+L = int(input())
+#string
+S = input()
+for i in range(len(S)):
+  if S[i] != " ":
+    encrypted += chr((ord(S[i]) + L - 97) % 26 + 97 )
+  else:
+    encrypted += " "
+print(encrypted)
